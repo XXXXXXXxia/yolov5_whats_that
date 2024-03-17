@@ -35,7 +35,10 @@ mask_yolov5s.yaml文件（s：小 m：中 l：大）里修改nc（number of）
 ***指令***   train.py文件最下边还有其他指令
 # python train.py --data mask_data.yaml --cfg mask_yolov5s.yaml --weights pretrained/yolov5s.pt --epoch 100 --batch-size 4 --device 0
 注释：     执行文件         数据集的配置文件        模型配置文件             使用到的预训练模型（直接网上下载）   训练多少轮  单次同时训练几张    调用gpu（用cpu的话就把0改成cpu）
-
+具体文件的名字需要根据自己的项目进行更改！！！
+比如本项目的指令更改为：
+# python train.py --data data.yaml --cfg yolov5s.yaml --weights weight/yolov5s.pt --epoch 200 --batch-size 4 --device 0
+python train.py --batch-size 2 --epochs 200 --data det_sample/leaf/data.yaml --weights weight/yolov5n-7-k5.pt
 复制该指令到下面运行即可
 
 ***其他指令***
@@ -113,4 +116,11 @@ python .\detect.py --source C:\Users\gf66\Pictures\luoye --weights runs/train/ex
 
 训练好的权重文件下载地址：(下载后解压)
 https://wwd.lanzoul.com/iRNlz07fk4da
+
+
+################################其他注意事项：########################################
+虚拟环境右下角直接用之前配的py316即可，这是一个之前配好的虚拟环境，安装了很多包，所以之后的YOLO项目直接用这个虚拟环境就行，不用再配了
+如果这个环境还有要加的包，cmd下conda activate py316，再pip安装即可
+
+
 

@@ -1,0 +1,8 @@
+train: D:/yolov5_test/yolov5_whats_that/data/opl/train/images       ###要改train（训练）和valid（验证）的路径，分别对应其文件下的image文件夹路径 注意斜杠都要翻一下！！！
+val: D:/yolov5_test/yolov5_whats_that/data/opl/valid/images
+
+# number of classes
+nc: 6                                           ###修改类的数量
+
+# class names
+names: ['pen', 'toy', 'remote', 'clock', 'ball', 'game']       ###修改类名 此处类名顺序与检测时的索引号相对应！！

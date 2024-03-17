@@ -1,7 +1,7 @@
 # YOLOv5 🚀 by Ultralytics, AGPL-3.0 license
 
 # Parameters
-nc: 80 # number of classes
+nc: 6 # number of classes     ###如果要用自己的训练模型，这里需要修改一下，改为自己的nc
 depth_multiple: 0.33 # model depth multiple
 width_multiple: 0.50 # layer channel multiple
 anchors:
