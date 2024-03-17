@@ -1,0 +1,6 @@
+pen
+ball
+clock
+toy
+game
+remote

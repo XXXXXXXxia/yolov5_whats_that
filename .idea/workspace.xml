@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3fe46d6-4158-44cb-99da-b71328b64ff3" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/yolov5_whats_that.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/test/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/test/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/images/7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/3.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/4.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/5.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/6.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/7.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/train/labels/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/images/10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/images/8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/images/9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/labels.cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/labels/10.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/labels/8.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/labels/9.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/opl/valid/labels/classes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp2/bus.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp2/zidane.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp3/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp3/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp4/11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/detect/exp4/12.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/events.out.tfevents.1710665718.LAPTOP-8LTK01DC.13524.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/hyp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/labels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/labels_correlogram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/opt.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/train_batch0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/train_batch1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/train_batch2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/weights/best.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp/weights/last.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/F1_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/PR_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/P_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/R_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/confusion_matrix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/events.out.tfevents.1710666526.LAPTOP-8LTK01DC.3152.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/hyp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/labels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/labels_correlogram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/opt.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/train_batch0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/train_batch1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/train_batch2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/val_batch0_labels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/val_batch0_pred.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/weights/best.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp2/weights/last.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/F1_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/PR_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/P_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/R_curve.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/confusion_matrix.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/events.out.tfevents.1710676553.LAPTOP-8LTK01DC.19364.0" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/hyp.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/labels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/labels_correlogram.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/opt.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/results.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/results.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/train_batch0.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/train_batch1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/train_batch2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/val_batch0_labels.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/val_batch0_pred.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/weights/best.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/runs/train/exp3/weights/last.pt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/loggers/comet/optimizer_config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weight/yolov5s.pt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/data/data.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/scripts/Procedures.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/scripts/Procedures.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2dnz70zSq01UnLJT4uTsed82epH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/yolov5_test/yolov5_whats_that/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "aDefault",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PythonContentEntriesConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yolov5_test\yolov5_whats_that\data" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-d68999036c7f-b11f5e8da5ad-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-233.14475.56" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="e3fe46d6-4158-44cb-99da-b71328b64ff3" name="更改" comment="" />
+      <created>1710658459685</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1710658459685</updated>
+      <workItem from="1710658462445" duration="1275000" />
+      <workItem from="1710659753737" duration="8116000" />
+      <workItem from="1710672819604" duration="4560000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

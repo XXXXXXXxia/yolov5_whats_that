@@ -5,4 +5,4 @@ val: D:/yolov5_test/yolov5_whats_that/data/opl/valid/images
 nc: 6                                           ###修改类的数量
 
 # class names
-names: ['pen', 'toy', 'remote', 'clock', 'ball', 'game']       ###修改类名 此处类名顺序与检测时的索引号相对应！！
+names: ['pen', 'ball', 'clock', 'toy', 'game', 'remote']       ###修改类名 此处类名顺序与检测时的索引号相对应！！

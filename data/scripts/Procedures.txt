@@ -23,7 +23,7 @@ val: D:/yolov5_test/42/opl/valid/images
 nc: 6                                           ###修改类的数量
 
 # class names
-names: ['pen', 'toy', 'remote', 'clock', 'ball', 'game']       ###修改类名 此处类名顺序与检测时的索引号相对应！！
+names: ['pen', 'toy', 'remote', 'clock', 'ball', 'game']       ###修改类名 此处类名顺序与检测时的索引号相对应！！要和classes文件里的顺序相对应！！！
 ！！！mask_data.yaml结束！！！
 
 **修改模型（models）的配置文件**
@@ -47,10 +47,12 @@ python train.py --batch-size 2 --epochs 200 --data det_sample/leaf/data.yaml --w
 
 
 ##############用训练好的模型去进行识别#############
-在val.py文件最底部同样有一句命令，粘贴如下：
-# python val.py --data data/mask_data.yaml --weights runs/train/exp9/weights/best.pt --img 640
-注释：                数据集的配置文件                        此处修改为自己训练好的模型文件的路径 对应的best.pt文件
+# python .\detect.py --source D:/yolov5_test/yolov5_whats_that/data/opl/test --weights runs/train/exp3/weights/best.pt
+注释：                                要识别的图片文件路径                      此处修改为自己训练好的模型文件的路径 对应的best.pt文件
 
+
+# python val.py --data data/mask_data.yaml --weights runs/train/exp9/weights/best.pt --img 640    芝士另一个指令，还没试过
+注释：                数据集的配置文件                        此处修改为自己训练好的模型文件的路径 对应的best.pt文件
 
 ##############图形化处理#############
 如果要进行图形化处理，就找到window.py文件的第60 61行，把路径改为自己训练的模型，device改为自己的设备（cpu或者0  貌似不用改？）
