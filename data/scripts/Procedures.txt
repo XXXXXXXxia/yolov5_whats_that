@@ -1,0 +1,116 @@
+#############收集数据集#############
+数据集要求：
+一个文件夹下有train valid子文件夹及一个data.yaml文件（data.yaml文件就是下面说的数据集的配置文件，存放nc train和valid路径等）
+train和valid下面分别均有images和labels子文件夹，train是用来训练的，valid是用来验证的。当一轮train结束后，用valid验证一下，如果准确率低，就换训练策略，
+直到训练为指定轮数，会产生一个最准确的模型文件best.pt
+train和valid文件夹下的images和labels子文件夹又分别存放各自的原照片和标记
+
+
+#############标记数据集#############
+使用labelimg标记数据集，产生label
+直接在下面的终端输入labelimg即可打开软件
+记得先把左边的PascalVOC改成YOLO
+然后open dir和change save dir分别改成各自的image和valid
+
+#############训练前需要做出的修改---修改数据集的配置文件及模型的配置文件#############
+
+**修改数据集（data）的配置文件**
+mask_data.yaml文件中：（data.yaml文件需要自己配，可以找到把voc.yaml复制一下，然后修改里面的东西，来和自己的训练相对应，具体修改如下（该文件包含以下内容）：）
+train: D:/yolov5_test/42/opl/train/images       ###要改train（训练）和valid（验证）的路径，分别对应其文件下的image文件夹路径 注意斜杠都要翻一下！！！
+val: D:/yolov5_test/42/opl/valid/images
+
+# number of classes
+nc: 6                                           ###修改类的数量
+
+# class names
+names: ['pen', 'toy', 'remote', 'clock', 'ball', 'game']       ###修改类名 此处类名顺序与检测时的索引号相对应！！
+！！！mask_data.yaml结束！！！
+
+**修改模型（models）的配置文件**
+mask_yolov5s.yaml文件（s：小 m：中 l：大）里修改nc（number of）
+
+
+##############训练数据集#############
+
+***指令***   train.py文件最下边还有其他指令
+# python train.py --data mask_data.yaml --cfg mask_yolov5s.yaml --weights pretrained/yolov5s.pt --epoch 100 --batch-size 4 --device 0
+注释：     执行文件         数据集的配置文件        模型配置文件             使用到的预训练模型（直接网上下载）   训练多少轮  单次同时训练几张    调用gpu（用cpu的话就把0改成cpu）
+
+复制该指令到下面运行即可
+
+***其他指令***
+# python train.py --data mask_data.yaml --cfg mask_yolov5l.yaml --weights pretrained/yolov5l.pt --epoch 100 --batch-size 4
+# python train.py --data mask_data.yaml --cfg mask_yolov5m.yaml --weights pretrained/yolov5m.pt --epoch 100 --batch-size 4
+
+
+##############用训练好的模型去进行识别#############
+在val.py文件最底部同样有一句命令，粘贴如下：
+# python val.py --data data/mask_data.yaml --weights runs/train/exp9/weights/best.pt --img 640
+注释：                数据集的配置文件                        此处修改为自己训练好的模型文件的路径 对应的best.pt文件
+
+
+##############图形化处理#############
+如果要进行图形化处理，就找到window.py文件的第60 61行，把路径改为自己训练的模型，device改为自己的设备（cpu或者0  貌似不用改？）
+然后这个文件右键run即可
+
+
+
+代码解释：!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+*****左侧目录中的文件夹：
+********** data：目录指明数据集的配置文件  比如data.yaml(具体命名可能有前缀，比如本项目为mask_data.yaml)
+********** docs:杂物
+********** images：存放图形化的中间图片
+********** models：指明模型的配置文件，有l m s等，使用时只需改ns(number of classes)即可，其他不用动
+********** pretrain：放预训练的模型，指在coco上已经训练过的模型，直接从网上下载下来的，用来辅助自己检测
+********** runs：保存运行代码过程中产生的中间结果、权重文件等，比如train对应的是执行train.py产生的东西，detect是执行detect的结果。
+                 val目录放的是验证的结果，如果模型没有完全训练完，中间中断了，要去验证模型时，可以执行val，在val目录下会生成对应的文件
+********** utils：存放工具包，包括画框的可视化等
+
+*****左侧目录中的主文件：
+********** data_gen：转换vico格式的数据
+********** detect：做可视化
+********** license：声明版权
+********** readme：注意事项
+********** requirements：需要安装的其他的依赖包
+********** train：训练用到
+********** val：验证用到
+********** window：窗口界面，小程序
+
+
+
+############################另一个procedure说明（从零开始的）：########################################
+[置顶]# 下载显卡驱动
+这一步省略了，大家可以在B站搜到很多关于yolov5的环境搭建教程
+
+# 下载yolov5
+-- git clone https://github.com/ultralytics/yolov5.git
+或者在 https://github.com/ultralytics/yolov5 上下载zip包
+-- 安装requirement.txt文件
+
+# 测试自带的权重文件
+python ./detect.py --source ./data/images --weights ./weight/yolov5s.pt
+                    source可以是文件目录，也可以是文件本身，可以是图片，也可以是视频，甚至云端的也可以
+# 收集数据集
+从自然环境中收集数据集，但是图片最好具有多样性，采集在不同的天气、不同的时间、不同的光照强度、不同角度、不同来源的图片。
+具体要求可搜索：YOLO官方推荐数据集需求。
+
+# 标记数据集
+使用labelImg 标记数据集，生成label
+
+# 训练数据集
+!python train.py --batch-size 2 --epochs 200 --data det_sample/leaf/data.yaml --weights weight/yolov5n-7-k5.pt
+
+# 测试
+!python .\detect.py --source C:\Users\gf66\Pictures\luoye --weights runs/train/exp15/weights/best.pt
+
+# 训练的比较好的一个weight
+python .\detect.py --source C:\Users\gf66\Pictures\luoye --weights runs/train/leaf_det_model/weights/best.pt
+
+python .\detect.py --source C:\Users\gf66\Pictures\luoye --weights runs/train/exp16/weights/best.pt
+
+我的数据集下载地址：
+「leaf」等文件 https://www.aliyundrive.com/s/7uoi6cn5WDF 提取码: h43e
+
+训练好的权重文件下载地址：(下载后解压)
+https://wwd.lanzoul.com/iRNlz07fk4da
+
