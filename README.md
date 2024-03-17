@@ -1,2 +1,3 @@
 # yolov5_whats_that
 此仓库用来盛放用yolov5做目标检测训练的文件
+训练识别的内容为opl提供的素材。
